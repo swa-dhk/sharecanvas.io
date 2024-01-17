@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"32efe6690a18acac","type":"text","text":"i figured i will try to replicate the sharecanvas.io website with my own twist:\n","x":-600,"y":98,"width":300,"height":100},
+		{"id":"041ce37e512e7cea","type":"text","text":"[Share/publish Obsidian canvas with sharecanvas.io - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/share-publish-obsidian-canvas-with-sharecanvas-io/60713)","x":-600,"y":-362,"width":300,"height":100},
+		{"id":"5e1dcb79ad783bb9","type":"text","text":"https://www.sharecanvas.io/","x":-600,"y":-182,"width":300,"height":50},
+		{"id":"211195d3c279218d","type":"text","text":"unfortunately @wkevwang has not publish the source code yet.","x":-600,"y":-42,"width":300,"height":60},
+		{"id":"25f963df9c57eba3","type":"text","text":"put your canvas in the URL. \nno third party hosting whatsever","x":-200,"y":106,"width":320,"height":85},
+		{"id":"21f9689c4fee84eb","type":"text","text":"/?default.canvas","x":300,"y":18,"width":440,"height":60},
+		{"id":"f28c6808d1d92800","type":"text","text":"/?https://your.site/data.canvas","x":300,"y":118,"width":440,"height":60},
+		{"id":"40c8f8dc880df987","type":"text","text":"```json\n/?data:application/json,{\n    \"nodes\": [\n        {\n            \"id\": \"2906b1fa0ab8a3c6\",\n            \"x\": -362, \"y\": -23,\n            \"width\": 250, \"height\": 60,\n            \"type\": \"text\",\n            \"text\": \"hello\"\n        },\n        {\n            \"id\": \"6b2ed6dba6fd34b0\",\n            \"x\": 78, \"y\": 71,\n            \"width\": 250, \"height\": 60,\n            \"type\": \"text\",\n            \"text\": \"world\"\n        }\n    ],\n    \"edges\": [\n        {\n            \"id\": \"0fde84fbbb90cc94\",\n            \"fromNode\": \"2906b1fa0ab8a3c6\",\n            \"fromSide\": \"right\",\n            \"toNode\": \"6b2ed6dba6fd34b0\",\n            \"toSide\": \"left\"\n        }\n    ]\n}","x":300,"y":218,"width":440,"height":642}
+	],
+	"edges":[
+		{"id":"332238283f71a025","fromNode":"25f963df9c57eba3","fromSide":"right","toNode":"21f9689c4fee84eb","toSide":"left"},
+		{"id":"f8d76f15d7b3834a","fromNode":"25f963df9c57eba3","fromSide":"right","toNode":"f28c6808d1d92800","toSide":"left"},
+		{"id":"ed75a6af7f56348b","fromNode":"25f963df9c57eba3","fromSide":"right","toNode":"40c8f8dc880df987","toSide":"left"},
+		{"id":"a9a17714e1380cfb","fromNode":"211195d3c279218d","fromSide":"bottom","toNode":"32efe6690a18acac","toSide":"top"},
+		{"id":"a6a0e506aaad9414","fromNode":"5e1dcb79ad783bb9","fromSide":"bottom","toNode":"211195d3c279218d","toSide":"top"},
+		{"id":"b47ce0664b5b899c","fromNode":"041ce37e512e7cea","fromSide":"bottom","toNode":"5e1dcb79ad783bb9","toSide":"top"},
+		{"id":"96217e60207764c9","fromNode":"32efe6690a18acac","fromSide":"right","toNode":"25f963df9c57eba3","toSide":"left"}
+	]
+}
